@@ -111,5 +111,8 @@
   (accountant/dispatch-current!)
   (mount-root))
 
+(defn init_spa [props]
+  (init!))
+
 (defn ^:dev/after-load reload! []
   (mount-root))

@@ -1,7 +1,6 @@
 {:lein         {:profile "+shadow-cljs"}
- :builds       {:app {:target     :browser
-                      :output-dir "resources/public/js"
-                      :asset-path "/js"
-                      :modules    {:app {:init-fn mfe-agent.core/init!}}}}
+ :builds       {:app {:target :npm-module
+                      :entries [mfe-agent.core]                                   ;[reagent-project.mfe-core]
+                      :output-dir "compiled/"}}
  :dev-http     {3000 {:root    "resources/public"
                       :handler mfe-agent.handler/app}}}

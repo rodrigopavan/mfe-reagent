@@ -1,11 +1,15 @@
 /target
+/compiled
+/dist
 /classes
 /checkouts
 profiles.clj
 pom.xml
 pom.xml.asc
+package-lock.json
 *.jar
 *.class
+*.iml
 /.lein-*
 /.nrepl-port
 /out
@@ -13,6 +17,7 @@ pom.xml.asc
 *.log
 /.env
 /.sass-cache
+/.idea
 /node_modules
 /.shadow-cljs/
 /resources/public/js/
