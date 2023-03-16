@@ -1,6 +1,32 @@
 # mfe-agent
 
-This is the mfe-agent project.
+This is the mfe-agent project. It was configured in a way that can be executed as a single-spa application.
+
+## Single-SPA instructions
+
+#### Make sure that packages are installed
+```
+npm install
+```
+
+#### Build core as mfe-app module
+```
+npx shadow-cljs compile mfe-app
+```
+
+#### Build main single-spa webpack application
+```
+npm run build
+```
+
+#### Run webpack server
+```
+npm start
+```
+
+After that, follow the single-spa instructions to load the application.
+
+## Everything below are from reagent project instructions
 
 ## Development mode
 
